@@ -5,7 +5,7 @@ import 'package:install_plugin/install_plugin.dart';
 void main() {
   const MethodChannel channel = MethodChannel('install_plugin');
   final List<MethodCall> log = <MethodCall>[];
-  String response;
+  String? response;
 
   channel.setMockMethodCallHandler((MethodCall methodCall) async {
     log.add(methodCall);
